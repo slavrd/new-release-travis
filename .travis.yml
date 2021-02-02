@@ -1,6 +1,6 @@
 deploy:
   provider: releases
-  api_key: 685dbe6eae46136a50237c5e8b695084caf7d034  
+  api_key:  
   file: "hello.sh"
   on:
     repo: dlavric/new-release-travis
