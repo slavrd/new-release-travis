@@ -1,8 +1,12 @@
+dist: bionic
+language: generic
+script:
+  - exit 0
 deploy:
   provider: releases
-  api_key: "GITHUB OAUTH TOKEN"
-  file: "FILE TO UPLOAD"
+  api_key:
+    secure: D7OX0bDepFEzBRzATgrOQE0CQp0JQoaYtKGCIpg8kNmvnTp3bsyCwly0YJtoqqclM1uhrcjUbzKOgWIzMDlDVGvDfWsDiChtgznHsH3YDeliIIQpLXKoOmQw0ns/a98CUMGgZ0qA9+6hLMxmytulnRLfzKNHD1QBWTyhDzPOC61/vy2aYkKdb0zx1pyd7Zzp3fzZCf6+THv/4RRGYXRr5spLUu5cFP0GPLtbPnL5Jb+HMsCNwGOyCHbyZpgP+p7o3r42iuw27a+taDVDrbusSRtMaDPxkFf8w87iWAOD7ywVd7976lEyvDY7BxPheUloCbveAOwtNl9WJn0kp2FFT/Y2MToZ5qZ4c8dNoAL3OWIsQW7FOMOuikOTVbfu0Tiw+Raeg4MG4DH95QVY8YsXEBlQsSxRY8nCIh2SDj/9+lTJkJvHvaoR+IACV9FCxZGBVMZ6C0maojzqyCmXwyKDV9V7yv4RQn1z0Bv4gD7cgHtuleUWrjCfDHC7l/I4ot9p7DhB3nvFWeeFdzNfDIoKGlyZtfscADlQdCb3i9ZJisiHUDSb6Wj12fvxR2XmtD7m4laF4aBH0eVCT7nM9VaSja7GBIML44yS/K+uVs8m1XmIsk1Ffw98u3tsZhBibLcqkg8KR+i39h5+7X7k/9eqKVdbIj0+Nkx/tltyroq4LjY=
+  file: "./hello.sh"
   skip_cleanup: true
   on:
     tags: true
-
